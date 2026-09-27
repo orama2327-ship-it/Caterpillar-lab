@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>كيف تنمو اليرقة وتتغيّر؟</title>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --leaf:#4a8a3d; --leaf-dark:#2f5f28; --gold:#e0a13a; --wing:#e8631f;
+  --cream:#f6f8ee; --ink:#26301f; --card:#ffffff;
+  padding-top: env(safe-area-inset-top,0px); padding-bottom: env(safe-area-inset-bottom,0px);
+}
+*{box-sizing:border-box;}
+html,body{margin:0;background:var(--cream);color:var(--ink);font-family:'Tajawal',sans-serif;}
+body{padding:24px 16px 60px;}
+.wrap{max-width:760px;margin:0 auto;}
+header{background:linear-gradient(135deg,var(--leaf),#79ab5f);border-radius:20px;padding:28px 24px;box-shadow:0 6px 0 var(--leaf-dark);}
+header h1{margin:0 0 6px;font-size:1.7rem;font-weight:900;color:#fff;}
+header p{margin:0;color:#eaf3e2;font-weight:500;}
+.goal{background:var(--card);border-radius:16px;padding:18px 20px;margin-top:18px;border-inline-start:6px solid var(--gold);line-height:1.9;}
+.goal b{color:var(--leaf-dark);}
+.materials{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px;}
+.mchip{background:var(--card);border-radius:12px;padding:10px 14px;font-size:.9rem;font-weight:700;color:var(--leaf-dark);}
+.warn{background:#fff4e0;border-inline-start:6px solid var(--gold);border-radius:12px;padding:12px 16px;margin-top:16px;font-weight:700;color:#8a5a12;}
+section.step{background:var(--card);border-radius:18px;padding:20px;margin-top:20px;box-shadow:0 3px 0 #e3e9d8;}
+.step h2{display:flex;align-items:center;gap:10px;font-size:1.1rem;margin:0 0 12px;color:var(--leaf-dark);}
+.badge{background:var(--leaf);color:#fff;width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;flex-shrink:0;font-size:.9rem;}
+.hint{font-size:.95rem;line-height:1.9;color:#3a4432;margin:0 0 10px;}
+.qa{margin-top:14px;padding-top:12px;border-top:1px dashed #e0e6d3;}
+.qa p.q{font-weight:700;margin:0 0 8px;}
+button.reveal{background:var(--gold);color:#fff;border:none;border-radius:10px;padding:8px 16px;font-family:inherit;font-weight:700;font-size:.9rem;cursor:pointer;}
+.answer{display:none;background:#eef6e6;border-radius:10px;padding:12px 14px;margin-top:10px;line-height:1.9;font-size:.95rem;border-inline-start:5px solid var(--leaf);}
+.answer.show{display:block;}
+textarea{width:100%;min-height:60px;border:1px solid #e0e6d3;border-radius:10px;padding:10px;font-family:inherit;font-size:.9rem;margin-top:8px;background:#fbfdf7;}
+
+.sim{text-align:center;background:#f5faf0;border:2px solid #dcebd0;border-radius:16px;padding:16px;}
+.sim svg{width:180px;height:120px;}
+.controls{margin-top:14px;}
+.controls button{background:var(--leaf);color:#fff;border:none;border-radius:10px;padding:10px 20px;font-family:inherit;font-weight:700;font-size:.95rem;cursor:pointer;}
+.controls button:disabled{background:#a9bfa0;}
+.day-label{margin-top:10px;font-weight:700;color:var(--leaf-dark);}
+.len-label{font-size:.85rem;color:#5a6650;}
+
+.extra{background:linear-gradient(135deg,#fff3de,#ffe8c2);border:2px dashed var(--gold);border-radius:18px;padding:20px;margin-top:22px;}
+.extra h2{margin:0 0 8px;color:#8a5a12;font-size:1.05rem;}
+footer{text-align:center;margin-top:26px;color:#8b9280;font-size:.85rem;}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){--cream:#171b12;--card:#212617;--ink:#eef2e6;}
+  .answer{background:#233020;}
+  .sim{background:#1a2115;border-color:#2c3722;}
+  textarea{background:#141810;color:#eef2e6;border-color:#37402c;}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>🐛 كَيفَ تَنمو اليَرَقَةُ وتَتَغَيَّرُ؟</h1>
+  <p>نَشاطٌ اسْتِقْصائِيٌّ · أَسْتَكْشِفُ</p>
+</header>
+
+<div class="goal"><b>أَتَوَقَّعُ:</b> ما التَّغَيُّراتُ الَّتي تَحدُثُ لِلْيَرَقَةِ في أَثناءِ نُمُوِّها؟</div>
+
+<div class="materials">
+  <div class="mchip">🐛 يَرَقَة</div>
+  <div class="mchip">🔍 عَدَسَة مُكَبِّرَة</div>
+  <div class="mchip">📏 مِسطَرَة</div>
+  <div class="mchip">🥫 وِعاء بِلاستيكِيّ</div>
+</div>
+
+<div class="warn">⚠ أَحذَرُ: أَتَعامَلُ مَعَ الحَيَواناتِ بِرِفق.</div>
+
+<section class="step">
+  <h2><span class="badge">١</span> أَلاحِظُ</h2>
+  <p class="hint">انظُر إلى اليَرَقَةِ، ثُمَّ ارسُمها، وعَيِّن على الرَّسمِ الأَجزاءَ الَّتي يُمكِنُ أَنْ تَراها.</p>
+  <textarea placeholder="صف ما لاحظته في اليرقة..."></textarea>
+</section>
+
+<section class="step">
+  <h2><span class="badge">٢</span> أَقيسُ</h2>
+  <p class="hint">أَجِد طولَ اليَرَقَةِ بِالمِسطَرَةِ، وأُسَجِّلُ القِياسَ على الرَّسمِ. ثُمَّ أَضَعُ اليَرَقَةَ في الوِعاءِ البِلاستيكِيِّ.</p>
+</section>
+
+<section class="step">
+  <h2><span class="badge">٣</span> ألاحِظُ — المُحاكاةُ التَّفاعُلِيَّةُ</h2>
+  <p class="hint">اضغَط "يَومٌ جَديد" لِمُتابَعَةِ نُمُوِّ اليَرَقَةِ يَومِيًّا دونَ إِزعاجِها، وراقِب كَيفَ تَتَغَيَّرُ حَتّى تَصيرَ فَراشَةً.</p>
+  <div class="sim">
+    <svg id="stage" viewBox="0 0 200 120"></svg>
+    <div class="day-label" id="dayLabel">اليوم: ٠</div>
+    <div class="len-label" id="lenLabel">الطول التقريبي: ١ سم</div>
+  </div>
+  <div class="controls" style="text-align:center;">
+    <button id="dayBtn" onclick="nextDay()">يومٌ جديد ▶</button>
+  </div>
+</section>
+
+<section class="step">
+  <h2><span class="badge">٤</span> أَسْتَخْلِصُ النَّتائِجَ</h2>
+  <div class="qa">
+    <p class="q">أُفَسِّرُ البَياناتِ: ما التَّغَيُّراتُ البَسيطَةُ أَوِ الكَبيرَةُ الَّتي تَمُرُّ بِها اليَرَقَةُ؟</p>
+    <button class="reveal" onclick="toggleAns('a1')">إظهار الإجابة</button>
+    <div class="answer" id="a1"><b>تَغَيُّراتٌ بَسيطَةٌ:</b> يَزدادُ طولُ اليَرَقَةِ وحَجمُها تَدريجِيًّا يَومًا بَعدَ يَومٍ.<br><b>تَغَيُّراتٌ كَبيرَةٌ:</b> تَنسَلِخُ اليَرَقَةُ (تَتَخَلَّصُ مِن جِلدِها الخارِجِيِّ) عِدَّةَ مَرّاتٍ وهيَ تَنمو، ثُمَّ تُكَوِّنُ حَولَ نَفسِها <b>عُذراءَ (شَرنَقَة)</b> اسْتِعدادًا لِلتَّحَوُّلِ إلى فَراشَةٍ.</div>
+  </div>
+  <div class="qa">
+    <p class="q">أَسْتَنتِجُ: ما مَراحِلُ دَورَةِ حَياةِ الفَراشَةِ؟</p>
+    <button class="reveal" onclick="toggleAns('a2')">إظهار الإجابة</button>
+    <div class="answer" id="a2">تَمُرُّ الفَراشَةُ بِأَربَعِ مَراحِلَ: <b>البَيضَةُ ← اليَرَقَةُ ← العُذراءُ (الشَّرنَقَةُ) ← الفَراشَةُ البالِغَةُ</b>. وتُسَمّى هذه العَمَلِيَّةُ بِـ"التَّحَوُّلِ الكامِلِ".</div>
+  </div>
+</section>
+
+<div class="extra">
+  <h2>🔍 أَسْتَكْشِفُ أَكثَر</h2>
+  <p class="hint">أُجَرِّبُ: كَيفَ يَتَغَيَّرُ أَبو ذُنَيبَةَ في أَثناءِ نُمُوِّهِ؟ أُحاوِلُ أَنْ أَضَعَ خُطَّةً لِلإِجابَةِ عَن ذلك.</p>
+  <div class="qa" style="border-top:none;padding-top:0;">
+    <button class="reveal" onclick="toggleAns('a3')">اقتراح خطة</button>
+    <div class="answer" id="a3">أُراقِبُ أَبا ذُنَيبَةَ في حَوضِ ماءٍ بِانتِظامٍ دونَ إِزعاجِهِ، وأَرسُمُ شَكلَهُ كُلَّ بِضعَةِ أَيّامٍ، وأَقيسُ طولَهُ التَّقريبِيَّ، وأُسَجِّلُ التَّغَيُّراتِ مِثلَ نُمُوِّ الأَرجُلِ الخَلفِيَّةِ ثُمَّ الأَمامِيَّةِ، واختِفاءِ الذَّيلِ تَدريجِيًّا حَتّى يَتَحَوَّلَ إلى ضِفدَعٍ صَغيرٍ.</div>
+  </div>
+</div>
+
+<footer>مختبر افتراضي تفاعلي · وحدة الحيوانات</footer>
+</div>
+
+<script>
+function toggleAns(id){document.getElementById(id).classList.toggle('show');}
+let day=0;
+const lens=['١ سم','١٫٥ سم','٢٫٥ سم','٤ سم','٥ سم (بدأت الشرنقة)','في الشرنقة','فراشة مكتملة! 🦋'];
+function caterpillar(len,color){
+  return '<ellipse cx="70" cy="90" rx="'+len+'" ry="14" fill="'+color+'"/>'+
+  Array.from({length:5}).map(function(_,i){return '<circle cx="'+(40+i*(len*1.3/5))+'" cy="90" r="6" fill="#3a6b2e"/>';}).join('')+
+  '<circle cx="'+(70-len)+'" cy="86" r="8" fill="#2f5f28"/>';
+}
+function render(){
+  const svg=document.getElementById('stage');
+  document.getElementById('dayLabel').textContent='اليوم: '+['٠','١','٢','٣','٤','٥','٦'][day];
+  document.getElementById('lenLabel').textContent='الحالة: '+lens[day];
+  let html='';
+  if(day<=3){
+    const lenv=[18,24,32,42][day];
+    html=caterpillar(lenv,'#8bc34a');
+  } else if(day===4){
+    html='<ellipse cx="70" cy="85" rx="46" ry="16" fill="#a5d16a"/>'+caterpillar(46,'#8bc34a');
+  } else if(day===5){
+    html='<ellipse cx="90" cy="70" rx="16" ry="30" fill="#7a5230" transform="rotate(10 90 70)"/><line x1="90" y1="40" x2="95" y2="20" stroke="#5a3d22" stroke-width="2"/>';
+  } else {
+    html='<g><ellipse cx="90" cy="70" rx="8" ry="14" fill="#2f2a22"/>'+
+    '<path d="M90 60 Q60 30 40 55 Q60 60 88 66" fill="#e8631f"/>'+
+    '<path d="M90 60 Q120 30 140 55 Q120 60 92 66" fill="#e8631f"/>'+
+    '<path d="M90 78 Q65 95 48 88 Q65 82 90 78" fill="#f2a03c"/>'+
+    '<path d="M90 78 Q115 95 132 88 Q115 82 90 78" fill="#f2a03c"/></g>';
+  }
+  svg.innerHTML=html;
+  if(day>=6){document.getElementById('dayBtn').disabled=true;document.getElementById('dayBtn').textContent='اكتملت الدورة ✔';}
+}
+function nextDay(){ if(day<6){day++;render();} }
+render();
+</script>
+</body>
+</html>
